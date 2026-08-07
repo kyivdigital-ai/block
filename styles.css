@@ -102,17 +102,26 @@ a {
 .window-hotspot__outline {
   position: absolute;
   inset: 0;
-  border: 2px solid rgba(17, 17, 17, 0.62);
-  background: rgba(255, 255, 255, 0.035);
-  transition: border-color 140ms ease, background 140ms ease, box-shadow 140ms ease;
+  border: 3px solid #ff66b3;
   pointer-events: none;
+  animation: windowBlink 1.15s ease-in-out infinite;
 }
 
-.window-hotspot:hover .window-hotspot__outline,
-.window-hotspot:focus-visible .window-hotspot__outline {
-  border-color: var(--ink);
-  background: rgba(255, 255, 255, 0.13);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+@keyframes windowBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.window-hotspot:hover .window-hotspot__outline {
+  opacity: 1;
+  animation: none;
+  background: rgba(255, 102, 179, 0.12);
 }
 
 /* Hover-only label. It is invisible until the cursor is actually over an active window. */
