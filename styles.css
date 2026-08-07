@@ -65,23 +65,17 @@ a {
 
 .building-stage {
   position: absolute;
-  z-index: 1;
   top: 50%;
   left: 50%;
-  width: min(92vw, 1560px);
+  width: max(100vw, calc(100dvh * 1.791776));
   aspect-ratio: 2048 / 1143;
   transform: translate(-50%, -50%);
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 .building-image {
-  display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  pointer-events: none;
-  -webkit-user-drag: none;
+  object-fit: cover;
 }
 
 .window-hotspot {
