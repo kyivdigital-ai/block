@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#bfe8ef" />
+  <title>SAD GAY — 3D</title>
+  <link href="https://fonts.cdnfonts.com/css/druk-text-wide-trial" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main id="app" aria-label="SAD GAY interactive 3D building">
+    <canvas id="scene" aria-hidden="true"></canvas>
+
+    <a class="brand" href="https://sadgay.com" target="_blank" rel="noreferrer">SAD GAY</a>
+    <div class="hint">HOVER WINDOWS / TAP ON MOBILE</div>
+
+    <section id="infoPanel" class="panel panel--info" aria-live="polite" aria-hidden="true">
+      <button class="panel__close" type="button" aria-label="Close">×</button>
+      <p class="panel__eyebrow">WHAT IS SAD GAY?</p>
+      <p class="panel__lead">IT WAS BORN SOMEWHERE BETWEEN A LATE-NIGHT BUS RIDE AND A CRACKED PHONE SCREEN AT 4:17AM.</p>
+      <p>SAD GAY IS ABOUT EMOTIONAL VISIBILITY. ABOUT MASCULINITY THAT DOESN’T PRETEND TO BE INVINCIBLE. ABOUT SENSITIVITY AS A FORM OF REBELLION.</p>
+      <p>SAD GAY LIVES IN THE SPACE BETWEEN INTIMACY AND EXPOSURE — WHEN YOU ARE SEEN, BUT NOT FULLY UNDERSTOOD.</p>
+      <p>SAD GAY IS FOR THE ONES WHO LOVE TOO MUCH. FOR THE ONES WHO TURN THEIR SADNESS INTO IDENTITY.</p>
+      <a class="panel__link" href="https://sadgay.com" target="_blank" rel="noreferrer">SADGAY.COM ↗</a>
+    </section>
+
+    <section id="bookPanel" class="panel panel--book" aria-live="polite" aria-hidden="true">
+      <button class="panel__close" type="button" aria-label="Close">×</button>
+      <p class="panel__eyebrow">THE LITTLE BOOK THAT WILL NEVER SEE THE WORLD</p>
+      <p class="panel__lead">390 PAGES. ONE DIARY. 200 COPIES.</p>
+      <a id="buyButton" class="buy-button" href="https://sadgay.com/#book" target="_blank" rel="noreferrer">BUY THE BOOK ↗</a>
+    </section>
+
+    <div id="windowLabel" class="window-label" aria-hidden="true"></div>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
